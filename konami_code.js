@@ -4,7 +4,8 @@ function init() {
   // Write your JavaScript code inside the init() function
   const listenedBody = document.body
   listenedBody.addEventListener('keydown', function(e) {
-    if (code.some(element => element === e.which)) {
+    const key = parseInt(e.which || e.detail)
+    if (code.some(element => element === e.which || )) {
       window.alert("Konami Code")
     }
   })

@@ -3,7 +3,9 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 function init() {
   // Write your JavaScript code inside the init() function
   const listenedBody = document.body
-  code.addEventListener('keydown', function(e) {
-
+  listenedBody.addEventListener('keydown', function(e) {
+    if (code.some(element => element === e.which)) {
+      window.alert("Konami Code")
+    }
   })
 }

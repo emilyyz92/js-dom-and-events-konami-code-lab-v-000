@@ -5,7 +5,7 @@ function init() {
   const listenedBody = document.body
   listenedBody.addEventListener('keydown', function(e) {
     if (code.some(element => element === e.which)) {
-      return window.alert("Konami Code")
+      window.alert("Konami Code")
     }
   })
 }

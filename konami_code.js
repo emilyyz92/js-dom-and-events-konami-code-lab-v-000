@@ -5,7 +5,7 @@ function init() {
   const listenedBody = document.body
   listenedBody.addEventListener('keydown', function(e) {
     const key = parseInt(e.which || e.detail)
-    if (code.some(element => element === e.which || )) {
+    if (code.some(element => element === key )) {
       window.alert("Konami Code")
     }
   })
